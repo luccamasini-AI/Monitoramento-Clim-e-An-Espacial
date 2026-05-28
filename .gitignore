@@ -18,3 +18,8 @@ ENV/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Arquivos locais não enviados para o GitHub
+relatorio_abnt.html
+contexto_front_end.md
+GS_Frontend_2TIAPF.pdf
