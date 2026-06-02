@@ -1,5 +1,7 @@
 # Monitor Espacial de Risco Climático 🛰️🌲
 
+> **🚀 Acesse a aplicação ao vivo (Deploy Streamlit Cloud):** [Clique aqui para abrir o Dashboard](https://luccamasini-ai-monitoramento-clim-e-an-espacial-app-y12jdb.streamlit.app/)
+
 [![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=Streamlit&logoColor=white)](https://streamlit.io/)
 [![Interactive Charts](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=Plotly&logoColor=white)](https://plotly.com/)
