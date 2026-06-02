@@ -94,7 +94,7 @@ def render_dashboard(
         st.markdown("Visualize as coordenadas críticas de desmatamento ou foco de calor com base nos filtros selecionados.")
         
         spatial_risk_map_figure = create_spatial_risk_map_chart(filtered_telemetry_dataframe)
-        st.plotly_chart(spatial_risk_map_figure, use_container_width=True, key="map_chart")
+        st.plotly_chart(spatial_risk_map_figure, width="stretch", key="map_chart")
         
         st.markdown("---")
         render_human_in_the_loop(filtered_telemetry_dataframe)
@@ -106,17 +106,17 @@ def render_dashboard(
             st.subheader("Evolução Histórica (NDVI)")
             st.markdown("Tendência histórica estimada do índice de vegetação.")
             historical_ndvi_trend_figure = create_ndvi_trend_historical_chart(historical_trend_dataframe)
-            st.plotly_chart(historical_ndvi_trend_figure, use_container_width=True, key="trend_chart")
+            st.plotly_chart(historical_ndvi_trend_figure, width="stretch", key="trend_chart")
             
         with column_right:
             st.subheader("Análise de Correlação")
             st.markdown("Umidade no solo vs Risco de Queimada.")
             moisture_risk_correlation_figure = create_moisture_risk_correlation_chart(filtered_telemetry_dataframe)
-            st.plotly_chart(moisture_risk_correlation_figure, use_container_width=True, key="scatter_chart")
+            st.plotly_chart(moisture_risk_correlation_figure, width="stretch", key="scatter_chart")
             
     with tab_raw_data:
         if should_show_raw_data:
             st.subheader("Dataset (Visualização Bruta)")
-            st.dataframe(filtered_telemetry_dataframe, use_container_width=True)
+            st.dataframe(filtered_telemetry_dataframe, width="stretch")
         else:
             st.info("Habilite a visualização de dados brutos na barra lateral.")

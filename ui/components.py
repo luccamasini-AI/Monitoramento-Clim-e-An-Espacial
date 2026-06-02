@@ -22,6 +22,8 @@ def render_status_indicator_card(title: str, description: str, status_level: str
         semantic_colors["info"]
     )
     
+    animation_style = "animation: emergency-pulse 2s infinite;" if status_level == "danger" else ""
+    
     styled_html = f"""
     <div style="
         background-color: {background_color};
@@ -31,6 +33,7 @@ def render_status_indicator_card(title: str, description: str, status_level: str
         border-radius: 8px;
         margin: 12px 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        {animation_style}
     ">
         <h5 style="margin: 0 0 6px 0; color: {border_color}; font-size: 1.05rem; font-weight: 600;">
             {title}

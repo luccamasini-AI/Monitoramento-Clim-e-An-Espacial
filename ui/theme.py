@@ -17,6 +17,15 @@ def get_custom_css() -> str:
     """
     return f"""
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600&display=swap');
+
+    /* Animação de Emergência (Glow/Pulse) */
+    @keyframes emergency-pulse {{
+        0% {{ box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }}
+        70% {{ box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }}
+        100% {{ box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }}
+    }}
+
     /* Ocultar elementos nativos do Streamlit para manter a aparência premium de painel integrado */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
