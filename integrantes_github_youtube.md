@@ -10,5 +10,5 @@ https://github.com/luccamasini-AI/Monitoramento-Clim-e-An-Espacial
 
 
 
-https://youtu.be/K1G54Car\_-A?si=PWYiCUzSuvIZh6xy
+https://youtu.be/K1G54Car_-A?si=PWYiCUzSuvIZh6xy
 
