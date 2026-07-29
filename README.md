@@ -73,8 +73,8 @@ graph TD
 Clone o repositório para o seu ambiente local e instale as dependências listadas no `requirements.txt`:
 ```bash
 # Clone o projeto
-git clone https://github.com/luccamasini-AI/Monitoramento-Clim-e-An-Espacial
-cd Monitoramento-Clim-e-An-Espacial
+git clone https://github.com/luccamasini-AI/spatial-climate-monitoring
+cd spatial-climate-monitoring
 
 # Crie e ative um ambiente virtual (venv)
 python -m venv venv
